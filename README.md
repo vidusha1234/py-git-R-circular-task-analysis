@@ -2,6 +2,18 @@
 
 Python analysis of a circular cursor-tracking task recorded with MouseReMoCo. The notebooks reproduce the reference figures, recompute the statistics table from the raw data, and repeat the analysis on our own recording.
 
+## What we did
+
+**Main work (assignment tasks)**
+- Reproduced the reference figures from `001MoDe_R1.csv` and its marker file: raw trajectory, time series, and one figure per recording.
+- Recomputed the statistics table (laps, radius, variability, error %, movement time, difficulty, throughput) from the raw data using only `numpy`, `matplotlib` and `os`.
+- Ran the same analysis on our own MouseReMoCo recording (`data.csv`, `marker.csv`).  
+  
+**Additional work (`extra-analysis/`)**
+- Descriptive comparison of the reference and our own recording: sampling rate, cycle durations and coverage, trajectories, and radial error.
+- A written summary of the differences between the two recordings and their likely causes.
+- The sampling-frequency printout in comparison-validation.ipynb is a whole-file estimate. The per-recording rates (about 21–28 Hz for our recording vs about 200 Hz for the reference), given in discrepancy-analysis.ipynb and the report, are the figures to use.
+
 ## Repository structure
 
 - `main.ipynb`: runs both analysis notebooks in order 
